@@ -1,4 +1,5 @@
 function volume_sphere() {
+	 event.preventDefault();
     var calRadius = parseFloat(document.getElementById("radius").value);         
     var result = 'NaN';
     if (!isNaN(calRadius) && calRadius >= 0) {
@@ -9,4 +10,6 @@ function volume_sphere() {
     calVolume.value = result;  
 }
 
-window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
+window.onload = function() {
+    document.getElementById('MyForm').onsubmit = volume_sphere;
+}
