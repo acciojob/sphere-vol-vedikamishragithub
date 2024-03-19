@@ -8,5 +8,5 @@ function volume_sphere() {
     var calVolume = document.getElementById("volume"); 
     calVolume.value = result;  
 }
-window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
+
 window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
